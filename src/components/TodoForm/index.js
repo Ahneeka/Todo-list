@@ -2,11 +2,11 @@
 
 function TodoForm() {
 
-  const onSubmit = e => {
+  const handleSubmit = e => {
     e.preventDefault();
   };
   return (
-    <form className='h-screen bg-gradient-to-r from-blue-500 to-pink-900 justify-center text-center' onSubmit={() => onSubmit}>
+    <form className='h-screen bg-gradient-to-r from-blue-500 to-pink-900 justify-center text-center' onSubmit={handleSubmit}>
       <h1 className="font-semibold text-3xl p-8 text-white">What's the plan for today</h1>
         <input 
         type="text" 
