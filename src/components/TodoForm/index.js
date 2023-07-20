@@ -1,32 +1,20 @@
-import React, { useState } from 'react'
 
-function TodoForm(props) {
-    const [input, setInput] = useState('');
 
-    const handleChange = e => {
-      setInput(e.target.value)
-    };
+function TodoForm() {
 
-    const handleSubmit = e => {
-      e.preventDefault();
-
-      // props.onSubmit({
-      //   id: Math.floor(Math.random() * 10000),
-      //   text:input
-      // })
-    };
+  const onSubmit = e => {
+    e.preventDefault();
+  };
   return (
-    <form className='todo-form' onSubmit={handleSubmit}>
+    <form className='h-screen bg-gradient-to-r from-blue-500 to-pink-900 justify-center text-center' onSubmit={() => onSubmit}>
+      <h1 className="font-semibold text-3xl p-8 text-white">What's the plan for today</h1>
         <input 
         type="text" 
         placeholder='Add a todo' 
-        value={input} 
         name='text'
-        className='todo-input'
-        onChange={handleChange}
+        className='py-3 px-9 border-blue-700 border-2'
         />
-
-        <button className='todo-button'>Add todo</button>
+        <button className='py-2 px-3  border-blue-700 border-2 bg-pink-700 text-white'>Add todo</button>
     </form>
   )
 }
