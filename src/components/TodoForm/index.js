@@ -1,4 +1,4 @@
-
+import TodoList from "../TodoList"
 
 function TodoForm() {
 
@@ -15,6 +15,7 @@ function TodoForm() {
         className='py-3 px-9 border-blue-700 border-2'
         />
         <button className='py-2 px-3  border-blue-700 border-2 bg-pink-700 text-white'>Add todo</button>
+        <TodoList />
     </form>
   )
 }
