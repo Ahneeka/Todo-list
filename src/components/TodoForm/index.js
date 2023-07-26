@@ -15,7 +15,15 @@ function TodoForm() {
         className='py-3 px-9 border-blue-700 border-2'
         />
         <button className='py-2 px-3  border-blue-700 border-2 bg-pink-700 text-white'>Add todo</button>
-        <TodoList />
+        <TodoList title = "To learn dart" className ="bg-blue-500"  />
+
+        <TodoList title = "Train/Workout" className ="bg-pink-200"/>
+
+        <TodoList title = "Wash cloth" className = "bg-rose-500"/>
+
+        <TodoList title = "To Cook" className = "bg-violet-500"/>
+
+        <TodoList title= "To wash" className = "bg-indigo-400" />
     </form>
   )
 }
